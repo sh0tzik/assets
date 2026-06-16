@@ -350,7 +350,7 @@ getgenv().Loaded = true
             local EnumParts = {}
             
             for part in string.gmatch(enum, "[%w_]+") do
-                insert(EnumParts, part)
+                table.insert(EnumParts, part)
             end
         
             local EnumTable = Enum
@@ -3332,8 +3332,7 @@ getgenv().Loaded = true
             end
             
             function Cfg.SetVisible(bool)
-                Items.Fade.BackgroundTransparency = 0
-                Library:Tween(Items.Fade, {BackgroundTransparency = 1})
+
 
                 Items.KeybindOutline.Visible = bool 
                 Items.KeybindOutline.Position = dim2(0, Items.KeybindOutline.AbsolutePosition.X + 2, 0, Items.KeybindOutline.AbsolutePosition.Y + 74)
