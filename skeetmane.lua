@@ -3239,18 +3239,18 @@ getgenv().Loaded = true
                     });
 
                     for _,mode in {"Always", "Toggle", "Hold"} do 
-                        Items[mode].TextColor3 = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+                        Items[mode].FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
                         Items[mode].BackgroundTransparency = 0;
                         Items[mode].TextColor3 = rgb(205, 205, 205)
 
                         Items[mode].MouseButton1Click:Connect(function()
                             for _,extra in {"Always", "Toggle", "Hold"} do
-                                Items[extra].TextColor3 = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+                                Items[extra].FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
                                 Items[extra].BackgroundTransparency = 0;
                                 Items[extra].TextColor3 = rgb(205, 205, 205)
                             end 
 
-                            Items[mode].TextColor3 = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+                            Items[mode].FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
                             Items[mode].BackgroundTransparency = 1;
                             Items[mode].TextColor3 = themes.preset.accent
 
