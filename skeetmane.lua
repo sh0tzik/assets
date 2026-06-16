@@ -3109,7 +3109,7 @@ getgenv().Loaded = true
             local Items = Cfg.Items; do 
                 -- Component
                     Items.Keybind = Library:Create( "TextButton" , {
-                        Parent = Items.game.StarterGui.Skeet.Main.Window.Inline.Hollow.Inline.InnerPage.PageHolder.Page.Page.Column.Outline.Inline.Background.Holder.Elements.Dropdown.Components;
+                        Parent = self.Items.Components;
                         FontFace = Font.new("rbxassetid://12187371840", Enum.FontWeight.Regular, Enum.FontStyle.Normal);
                         Name = "\0";
                         TextColor3 = rgb(111, 111, 111);
