@@ -3135,9 +3135,11 @@ getgenv().Loaded = true
                 -- 
                 
                 -- Mode Holder
-                    Items.KeybindOutline = Library:Create( "Frame" , {
+                    Items.KeybindOutline = Library:Create( "TextButton" , {
                         Parent = Library.Items;
                         Visible = false;
+                        AutoButtonColor = false;
+                        Text = "";
                         Size = dim2(0, 100, 0, 22);
                         Name = "\0";
                         Position = dim2(0.8264937996864319, 0, 0.33450964093208313, 0);
